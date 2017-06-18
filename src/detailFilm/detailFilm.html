@@ -1,0 +1,31 @@
+ <h1 ng-show="error !== null">{{error}}</h1>
+    <section class="imgDetail"  ng-hide="error !== null">
+        <button type="submit" class="returnHome" ng-click="conectionHome('/home')">Return Home</button>    
+        <div class="marco">
+            <h1 class="detailTitle">DETAIL</h1>
+            <h1 class="filmTitle">FILM</h1>        
+            <div class="starsDetail">
+                <form>
+                    <p class="clasificationDetail">
+                        <input class="sizeStars" id="radio-{{$index}}-5" type="radio" name="estrellas" value="5" ng-model="detailsModal.start">
+                        <label class="labelFilm" for="radio-{{$index}}-5" ng-click="saveStartDetail($index,5)" >★</label>
+                        <input class="sizeStars" id="radio-{{$index}}-4" type="radio" name="estrellas" value="4" ng-model="detailsModal.start">
+                        <label class="labelFilm" for="radio-{{$index}}-4" ng-click="saveStartDetail($index,4)" >★</label>
+                        <input class="sizeStars" id="radio-{{$index}}-3" type="radio" name="estrellas" value="3" ng-model="detailsModal.start">
+                        <label class="labelFilm" for="radio-{{$index}}-3" ng-click="saveStartDetail($index,3)" >★</label>
+                        <input class="sizeStars" id="radio-{{$index}}-2" type="radio" name="estrellas" value="2" ng-model="detailsModal.start">
+                        <label class="labelFilm" for="radio-{{$index}}-2" ng-click="saveStartDetail($index,2)" >★</label>
+                        <input class="sizeStars" id="radio-{{$index}}-1" type="radio" name="estrellas" value="1" ng-model="detailsModal.start">
+                        <label class="labelFilm" for="radio-{{$index}}-1" ng-click="saveStartDetail($index,1)" >★</label>
+                    </p>
+                </form>
+            </div> 
+            <article class="articleFilm">
+                <img ng-src="{{detailsModal.img}}" alt="" class="imgFilm">
+            </article>
+            <h1 class="titleMovieDetail">{{detailsModal.name}}</h1>
+            <p class="descriptionFilm">{{detailsModal.description}}</p>
+            <h1 class="genderTitle">GENDER: {{detailsModal.gender}}</h1>
+            <h1 class="actorTitle">ACTOR: {{detailsModal.actor}}</h1>      
+        </div>
+    </section>

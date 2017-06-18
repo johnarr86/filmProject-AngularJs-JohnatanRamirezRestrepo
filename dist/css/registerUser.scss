@@ -1,0 +1,197 @@
+@import "variables.scss";
+
+.imgRegister{
+    background-repeat: no-repeat;
+    filter:grayscale(64%);
+    /* margin-top: 1px; */
+    height: 630px;
+    width: 100vw;
+    /* overflow-x: hidden; */
+}
+
+.register1{
+    background: black;
+    width: 35vw;
+    height: 70vh;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+    transform: rotate(3deg);
+    opacity: 0.2;
+    border: 1.5px solid white;
+    @media #{$mediaQuery1}{
+        width: 40vw;
+        left: 30%;      
+    }
+    @media #{$mediaQuery2}{
+        width: 45vw;
+        left: 28%;
+    }
+    @media #{$mediaQuery3}{
+        width: 58vw;
+        left: 22%;
+    }
+    @media #{$mediaQuery4}{
+        width: 85vw;
+        left: 8%;
+    }
+}
+
+   
+
+
+.register2{
+    background: black;
+    width: 35vw;
+    height: 70vh;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+    transform: rotate(-3deg);
+    opacity: 0.3;
+    border: 1.5px solid white;
+    @media #{$mediaQuery1}{
+        width: 40vw;
+        left: 30%;
+    }
+    @media #{$mediaQuery2}{
+        width: 45vw;
+        left: 28%;
+    }
+    @media #{$mediaQuery3}{
+        width: 58vw;
+        left: 22%;
+    }
+    @media #{$mediaQuery4}{
+        width: 85vw;
+        left: 8%;
+    }
+}
+
+.register3{
+    display: flex;
+    justify-content: center;
+    background: black;
+    width: 35vw;
+    height: 70vh;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+    opacity: 0.4;
+    border: 1.5px solid white;
+    @media #{$mediaQuery1}{
+        width: 40vw;
+        left: 30%;
+    }
+    @media #{$mediaQuery2}{
+        width: 45vw;
+        left: 28%;
+    }
+    @media #{$mediaQuery3}{
+        width: 58vw;
+        left: 22%;
+    }
+    @media #{$mediaQuery4}{
+        width: 85vw;
+        left: 8%;
+    }
+}
+
+.hrRegister1{
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    width: 15%;
+}
+
+.hrRegister2{
+position: absolute;
+    left: 82%;
+    top: 15%;
+    width: 14%;
+}
+
+.registerTitle{
+    color: white;
+    position: relative;
+    /*left: 20%;*/
+    top:40px;
+    font-family: georgia;
+    font-size: 35px;
+    text-align: center;
+    @media #{$mediaQuery2}{
+        font-size: 30px;
+    }
+    @media #{$mediaQuery3}{
+        font-size: 25px;
+        top: 45px;
+    }    
+}
+
+.userRegister{
+    background-color: transparent;
+    height: 24px;
+    width: 49%;
+    position: absolute;
+    bottom: 65%;
+    left: 27%;
+    color: white;
+    border-radius: 4px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid white;
+}
+
+.passwordRegister{
+    background-color: transparent;
+    height: 24px;
+    width: 49%;
+    position: absolute;
+    bottom: 50%;
+    border-radius: 4px;
+    color: white;
+    border-radius: 4px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid white;
+    left: 27%;
+}
+
+.repPassword{
+    left: 27%;
+    background-color: transparent;
+    height: 24px;
+    width: 49%;
+    position: absolute;
+    bottom: 35%;
+    border-radius: 4px;
+    color: white;
+    border-radius: 4px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid white;
+}
+
+
+
+.createa{
+    position: absolute;
+    height: 30px;
+    width: 38%;
+    background-color: black;
+    color: white;
+    bottom: 15%;
+    border-radius: 4px;
+    left: 33%;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.createa:hover{
+    background-color: white;
+    color: black;
+}
+

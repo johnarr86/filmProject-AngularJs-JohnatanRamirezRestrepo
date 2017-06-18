@@ -1,0 +1,22 @@
+$body-margin-top: 0;
+$font-family: "robotoregular";
+
+// Media Queries login and register user:
+$mediaQueryMayor: all and (min-width: 1131px) and (maz-width: 1280px);
+$mediaQuery1: all and (min-width: 1000px) and (max-width: 1130px);
+$mediaQuery2: all and (min-width: 735px) and (max-width: 999px);
+$mediaQuery3: all and (min-width: 500px) and (max-width: 734px);
+$mediaQuery4: all and (min-width: 320px) and (max-width: 499px);
+
+
+// Media Queries home: 
+$mediaQueryMovie1: (min-width: 642px) and (max-width: 800px);
+$mediaQueryMovie2: (min-width: 390px) and (max-width: 641px);
+$mediaQueryMovie3: (min-width: 319px) and (max-width: 389px);
+
+$mediaQueryStars1: (min-width: 541px) and (max-width: 640px);
+
+// Media Queries details movie: 
+$mediaQueryDetailFilm1: (min-width: 500px) and (max-width: 730px);
+$mediaQueryDetailFilm2: (min-width: 320px) and (max-width: 499px);
+

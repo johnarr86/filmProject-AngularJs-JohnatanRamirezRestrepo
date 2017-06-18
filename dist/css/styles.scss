@@ -1,0 +1,39 @@
+@import "variables.scss";
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: $body-margin-top;
+    font-family: $font-family;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    // background-color: black;
+}
+
+*:focus{
+    outline: none;
+}
+
+
+// body
+//   position: relative
+//   bottom: 20px
+//   background-repeat: repeat-y
+//   overflow-x: hidden
+
+html{
+  padding: 0px !important;
+  height: 100%;
+  width: 100%;
+}
+  
+

@@ -1,0 +1,218 @@
+@import 'variables.scss';
+
+.imgDetail{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(./../../dist/img/background8.jpg);
+}
+
+.returnHome{
+    position: absolute;
+    width: 20%;
+    background-color: #35373E;
+    color: white;
+    border-radius: 4px;
+    transition: all 2s;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 20px;
+    margin: 1% 0px 0px 40%;
+    &:hover{
+        background: white;
+         color: black
+   }
+   @media #{$mediaQueryDetailFilm1}{
+        width: 38%;
+        margin: 1% 0px 0px 31%;
+        cursor: pointer;
+        z-index: 1;
+   }
+   @media #{$mediaQueryDetailFilm2}{
+        width: 50%;
+        margin: 2% 0px 0px 25%;
+        font-size: 18px;
+        // z-index: 1;
+   }
+}
+
+
+.marco{
+    position: absolute;
+    width: 80vw;
+    height: 400px;
+    margin: 10% 0% 0px 10%;
+    border: 2px solid #fff;
+    @media #{$mediaQueryDetailFilm1}{
+       height: 400px; 
+       width: 90vw;
+       margin: 9% 0% 0px 5%;
+    }
+    @media #{$mediaQueryDetailFilm2}{
+        border: none;
+        margin: 0% 0% 0px 0%;
+        width: 100vw;
+        right: 5%;
+        
+    }
+}
+
+.clasificationDetail{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    bottom: 81%;
+    font-size: 30px;
+    direction: rtl;
+    text-align: center; 
+    @media #{$mediaQueryDetailFilm2}{
+        bottom: 20%;
+    } 
+     @media #{$mediaQueryDetailFilm2}{       
+        bottom: 100px;
+        width: 80%;
+        left: 15%;
+    }
+}
+
+.detailTitle{
+    position: absolute; 
+    color: #35373E; 
+    font-family: cursive; 
+    font-size: 35px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em white,0 0 0.2em white;
+    bottom: 26%;
+    left: -8%;
+    @media #{$mediaQueryDetailFilm1}{
+        display: none;
+    }
+}
+
+.filmTitle{
+    position: absolute;
+    color: #35373E;
+    font-family: cursive; 
+    font-size: 35px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em white,0 0 0.2em white;
+    bottom: 47%;
+    left: 101%;
+    @media #{$mediaQueryDetailFilm1}{
+        display: none;
+    }
+}
+
+
+
+.articleFilm{
+    position: absolute; 
+    width: 24%;
+    height: 250px;
+    margin: 108px 0px 0px 3%;
+    border: 2px solid white;
+    @media #{$mediaQueryDetailFilm1}{
+        margin: 100px 0px 0px 3%;
+    } 
+    @media #{$mediaQueryDetailFilm2}{
+        height: 180px;
+        width: 36%;
+        margin: 80px 0px 0px 36%;
+    } 
+}
+
+.imgFilm{
+    width: 100%;
+    height: 250px;
+    @media #{$mediaQueryDetailFilm2}{
+         height: 180px;
+    } 
+}
+
+.titleMovieDetail{   
+    position: absolute;  
+    width: 70%;
+    height: 30px;
+    bottom: 92%;
+    left: 15%;
+    font-size: 25px;
+    font-family: cursive; 
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 0.2em #35373E, 0 0 0.2em #35373E,0 0 0.2em #35373E;    
+    @media #{$mediaQueryDetailFilm2}{
+       font-size: 18px;
+       left: 20%;
+    } 
+    @media #{$mediaQueryDetailFilm2}{
+        bottom: 320px;
+        left: 19%;
+    }
+}
+
+.genderTitle{
+    position: absolute;  
+    width: 70%;
+    height: 30px;
+    bottom: 270px;
+    left: 30%;
+    font-size: 20px;
+    font-family: cursive; 
+    text-align: justify;
+    color: white;
+    text-shadow: 0 0 0.2em #35373E, 0 0 0.2em #35373E,0 0 0.2em #35373E;        
+    @media #{$mediaQueryDetailFilm1}{
+        font-size: 16px;
+        bottom: 270px;
+    }
+    @media #{$mediaQueryDetailFilm2}{
+        bottom: 75px;
+        left: 8%;
+    }
+}
+
+.actorTitle{
+    position: absolute;  
+    width: 70%;
+    height: 30px;
+    bottom: 230px;
+    left: 30%;
+    font-size: 20px;
+    font-family: cursive; 
+    text-align: justify;
+    color: white;
+    text-shadow: 0 0 0.2em #35373E, 0 0 0.2em #35373E,0 0 0.2em #35373E;    
+    @media #{$mediaQueryDetailFilm1}{
+        font-size: 16px;
+        bottom: 240px;
+    }
+    @media #{$mediaQueryDetailFilm2}{
+        width: 80%;
+        bottom: 55px;
+        left: 8%;
+    } 
+}
+.descriptionFilm{
+    position: absolute;  
+    width: 68%;
+    height: 30px;
+    bottom: 180px;
+    left: 30%;
+    font-size: 16px;
+    font-family: cursive; 
+    text-align: justify;
+    color: black;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em white,0 0 0.2em white;  
+    @media #{$mediaQueryDetailFilm1}{
+        font-size: 14px;
+        bottom: 195px;
+    }
+    @media #{$mediaQueryDetailFilm2}{
+        left: 8%;
+        width: 94%;
+        bottom: 25px;
+    }
+}
+
